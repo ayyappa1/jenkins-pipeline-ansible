@@ -38,10 +38,10 @@ pipeline{
 			}
 		stage('Ansible playbook'){
 			  steps{
-			      sh 'cd /home/ec2-user/workspace/ansible-pipe-line/ && ansible-playbook test.yml -b -vvv'
+			      sh 'cd /home/ec2-user/workspace/ansible-pipe-line/jenkins-pipeline-ansible/ && ansible-playbook test.yml -b -vvv'
 			     
 			  }
 			}
-	
+	jenkins-pipeline-ansible/
 }	
 }
