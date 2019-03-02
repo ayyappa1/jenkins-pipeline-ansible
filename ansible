@@ -26,7 +26,7 @@ pipeline{
 			stage('Git clone'){
 			  steps{
 			     sh 'cd /home/ec2-user/workspace/jenkins-pipeline-ansible'
-			     sh 'git clone '
+			     sh 'git clone https://github.com/ayyappa1/jenkins-pipeline-ansible.git'
 		            
 			  }
 			}
@@ -38,7 +38,7 @@ pipeline{
 			}
 		stage('Ansible playbook'){
 			  steps{
-			      sh 'cd /home/ec2-user/workspace/jenkins-pipeline-ansible/document/ && ansible-playbook test.yml -b -vvv'
+			      sh 'cd /home/ec2-user/workspace/jenkins-pipeline-ansible/ && ansible-playbook test.yml -b -vvv'
 			     
 			  }
 			}
