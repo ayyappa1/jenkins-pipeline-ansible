@@ -42,6 +42,6 @@ pipeline{
 			     
 			  }
 			}
-	jenkins-pipeline-ansible/
+	
 }	
 }
